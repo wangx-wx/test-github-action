@@ -5,4 +5,4 @@ public record ChatResponse(
         String model,
         String strategy,
         String conversationId
-) {}
+) {};

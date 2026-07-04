@@ -29,9 +29,9 @@ public class ChatController {
     }
 
     @GetMapping("/models")
-    public ResponseEntity<Map<String, Object>> getModels() {
+    private ResponseEntity<Map<String, Object>> getModels() {
         return ResponseEntity.ok(Map.of(
-                "models", chatService.getAvailableModels(),
+                "models", chatService.getAvailableMods(),
                 "activeStrategy", modelRouter.getActiveStrategyName()
         ));
     }
