@@ -33,6 +33,7 @@ jobs:
           ANTHROPIC_BASE_URL: ${{ vars.ANTHROPIC_BASE_URL }}
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          show_full_output: true
           claude_args: |
             --model ${{ vars.CLAUDE_MODEL_ID }}
           plugin_marketplaces: "https://github.com/anthropics/claude-code.git"
