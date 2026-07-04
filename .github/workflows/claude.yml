@@ -37,7 +37,7 @@ jobs:
             --model ${{ vars.CLAUDE_MODEL_ID }}
           plugin_marketplaces: "https://github.com/anthropics/claude-code.git"
           plugins: "code-review@claude-code-plugins"
-          prompt: "/code-review:code-review ${{ github.repository }}/pull/${{ github.event.pull_request.number }}"
+          prompt: "/code-review:code-review ${{ github.repository }}/pull/${{ github.event.pull_request.number }} 将代码审查结果输出到PR评论中"
 
           # Optional: Customize the trigger phrase (default: @claude)
           # trigger_phrase: "/claude"
