@@ -43,7 +43,7 @@ public class ChatService {
 
     public List<ModelInfo> getAvailableModels() {
         return List.of(
-                new ModelInfo("gpt-4o",
+                ModelInfo("gpt-4o",
                         "Most capable model for complex reasoning, code generation, and multi-step tasks",
                         0.7),
                 new ModelInfo("gpt-4o-mini",
